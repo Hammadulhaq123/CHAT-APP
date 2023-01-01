@@ -1,0 +1,331 @@
+*{
+    margin: -0.5vh;
+    padding: 1%;
+    box-sizing: content-box;
+
+}
+body{
+    font-family: sans-serif;
+    background:linear-gradient(rgba(4, 9 , 30, 0.7), rgba(4, 9 , 30, 0.7)),url(./bg.jpg);
+    background-size: cover;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 90%;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+    border-radius: 20px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: transparent; 
+    border-radius: 20px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+#container{
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    background: #444444;
+    margin: 5vh 5vw;
+    font-size: 0;
+    overflow: hidden;
+}
+aside{
+    width: 25%;
+    height: 80vh;
+    background-color: #444444;
+    display: inline-block;
+    font-size: 15px;
+    vertical-align: top;
+    overflow-y: scroll;
+    border-radius: 20px 0 0 20px;
+
+}
+aside header{
+    /* height: 20vh; */
+    
+    padding: 30px 20px;
+}
+/* aside hr{
+    border: none;
+    background: #5e616a;
+    margin-bottom: 2vh;
+    border-radius: 2px;
+    font-size: 3px;
+} */
+aside input{
+    width: 50%;
+    height: 5vh;
+    line-height: 5vh;
+    padding: 0 50px 0 21px;
+    position: relative;
+    background-color: #5e616a;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/ico_search.png);
+    background-repeat: no-repeat;
+    background-position: 170px;
+    background-size: 40px;
+    outline: none;
+    box-shadow: 1px 1px 8px #5e616a;
+}
+aside input::placeholder{
+    color:#fff;
+}
+aside input:hover{
+    background-color: #5e616a87;
+    box-shadow: 1px 1px 8px #5e616a;
+
+
+}
+aside ul{
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+    max-width: 100%;
+    height: 13vh;
+}
+aside li{
+    display: flex;
+    padding: 6px 0;
+    background-color: #5e616a;
+    border-radius: 20px;
+    /* margin-top: px; */
+}
+aside li:hover{
+    background-color: #5e616a54;
+    border-radius: 20px;
+    cursor: pointer;
+}
+h2, h3{
+    margin: 0;
+}
+aside li img{
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-right: 8px;
+}
+aside li div{
+    /* display: inline-block; */
+    display: flex;
+    flex-direction: column;
+    vertical-align: top;
+    margin-top: 12px;
+}
+aside div span{
+    display: flex;
+}
+aside li h2{
+    font-size: 14px;
+    color: #fff;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+aside li h3{
+    display: flex;
+    font-size: 12px;
+    color: #7e818a;
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+main{
+    color: #fff;
+	width:70%;
+	height:80vh;
+	display:inline-block;
+	font-size:15px;
+	vertical-align:top;
+    /* overflow-y: scroll; */
+    background: #797575;
+    border-radius: 0 20px 20px 0;
+}
+#head-div{
+    margin: 0;
+    padding: 0;
+}
+main header{
+    background: #424242;
+    border-radius: 15px;
+    height: 4vh;
+    margin: 0 0 1vh 0;
+    /* padding: 30px 20px 30px 40px; */
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main header img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+main header h2{
+    /* margin-top: 20px; */
+    font-size: 18px;
+    /* margin-bottom: 5px; */
+}
+main header h3{
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    color: #04a91d;
+}
+#avatar{
+    margin-right: auto;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#star{
+    /* margin: 3% 3% 0 auto; */
+    margin-left: auto;
+    /* DOnt chnage the height and width of icons */
+    /* height: 50px; */
+    /* width: 50px; */
+    cursor: pointer;
+}
+#star:hover{
+    color: orange;
+}
+#head-div h2:hover{
+    color: rgba(255, 255, 255, 0.572);
+    cursor: pointer;
+}
+#chat{
+    background: #424242;
+    border-radius: 15px;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    height: 60vh;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#chat .you .message{
+    margin-right: auto;
+}
+#chat .you .message:hover, .me .message:hover{
+    opacity: 0.5;
+}
+#chat .me .message{
+    margin-left: auto;
+}
+#chat li{
+    padding: 10px 30px;
+}
+#chat h2,#chat h3{
+	display:inline-block;
+	font-size:14px;
+	font-weight:normal;
+}
+
+#chat .entete{
+    /* display: flex; */
+    line-height: 0%;
+    margin-bottom: -3px;
+    /* border-radius: 50px; */
+}
+#chat .message{
+    padding: 20px;
+    color: #fff;
+    line-height: 20px;
+    max-width: 50%;
+    text-align: left;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#chat .me{
+    text-align: right;
+    justify-content: right;
+}
+#chat .me .message{
+    display: flex;
+    background-color: #6fbced;
+    /* justify-content: right; */
+}
+#chat .you .message{
+    background: #21d861;
+}
+.status{
+	width:8px;
+	height:8px;
+	border-radius:50%;
+	/* display:inline-block; */
+	margin-right:7px;
+}
+.green h3{
+    color: #04a91d;
+}
+.green{
+    background-color:#04a91d;
+}
+.orange h3{
+    color: #f14024;
+}
+.orange{
+    background-color:#f14024;
+}
+.blue{
+    background-color:#6fbced;
+	margin-right:0;
+	margin-left:7px;
+}
+
+main footer{
+    display: flex;
+    background: #424242;
+    height: 6vh;
+    border-radius: 15px;
+    margin:0.5vh 0 0 0;
+}
+footer .fa-solid{
+    font-size: 18px;
+    margin: 2px 0 0 10px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.572);
+}
+footer .fa-camera{
+    color: #fff;
+}
+footer .fa-paper-plane{
+    margin:2px 0 0 auto;
+    font-size: 18px;
+    cursor: pointer;
+    color: #04a91d;
+
+}
+footer .fa-paper-plane:hover{
+    color: #21d861;
+}
+main footer textarea{
+    resize: none;
+    border: none;
+    outline: none;
+    display: block;
+    width: 55vw;
+    height: 2.2vh;
+    border-radius: 15px;
+    background: rgba(94, 91, 91, 0.572);
+    padding: 10px;
+    font-size: 13px;
+    /* margin:1% 0 1% 0; */
+    color: white;
+}
+main footer textarea::placeholder{
+	color:#ddd;
+}
+main footer textarea:hover{
+    opacity: 0.5;
+}
