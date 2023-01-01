@@ -207,11 +207,11 @@ main header h3{
     list-style-type: none;
     margin: 0;
     padding-left: 0;
-    height: 60vh;
+    height: 59vh;
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
 }
 #chat .you .message{
     margin-right: auto;
