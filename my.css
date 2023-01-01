@@ -154,6 +154,12 @@ main{
     margin: 0;
     padding: 0;
 }
+main .fa-bars{
+    display: none;
+}
+main .fa-times{
+    display: none;
+}
 main header{
     background: #424242;
     border-radius: 15px;
@@ -328,4 +334,13 @@ main footer textarea::placeholder{
 }
 main footer textarea:hover{
     opacity: 0.5;
+}
+
+
+
+
+@media (max-width: 700px){
+    aside{
+        display: none;
+    }
 }
